@@ -47,7 +47,7 @@ const Hero = () => {
         </p>
 
         {/* Video with leaklight */}
-        <div className="relative mx-auto mt-[1.5em] aspect-[16/9] w-[90%] rounded-[1em] shadow-[0_0_15px_8px_#00000080] sm:w-[70%]">
+        <div className="relative z-[1] mx-auto mt-[1.5em] aspect-[16/9] w-[90%] rounded-[1em] shadow-[0_0_15px_8px_#00000080] sm:w-[70%]">
           {/* Leaklight */}
           <div className="absolute inset-0 m-auto aspect-square h-[120%] rounded-full bg-[#FFBE258F] blur-[10em]"></div>
 

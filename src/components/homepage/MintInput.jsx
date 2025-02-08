@@ -36,7 +36,7 @@ const MintInput = () => {
 
   return (
     <>
-      <div className="mint-input my-[1em] flex gap-[0.5em] border-y border-y-[#FFBE25] py-[1.2em]">
+      <div className="mint-input relative my-[1em] flex gap-[0.5em] border-y border-y-[#FFBE25] py-[1.2em]">
         {/* Plus btn */}
         <GradientButton className="px-[1em]" onClick={handleIncrease}>
           +
