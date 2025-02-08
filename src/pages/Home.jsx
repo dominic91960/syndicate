@@ -3,6 +3,7 @@ import brickBg from "../assets/images/homepage/brick-bg.png";
 import Hero from "../components/homepage/Hero";
 import Mint from "../components/homepage/Mint";
 import Workshop from "../components/homepage/Workshop";
+import Collection from "../components/homepage/Collection";
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <Hero />
         <Mint />
         <Workshop />
+        <Collection />
         <div className="h-[40vh]"></div>
       </main>
     </>
