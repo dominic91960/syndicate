@@ -1,1 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@font-face {
+  font-family: "ddt-extended";
+  src:
+    url("./assets/fonts/ddt-w00-extended.woff2") format("woff2"),
+    url("./assets/fonts/ddt-w00-extended.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ddt";
+  src:
+    url("./assets/fonts/ddt.woff2") format("woff2"),
+    url("./assets/fonts/ddt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-montserrat: "Montserrat", "system-ui", "serif";
+  --font-ddt: "ddt", "system-ui", "sans-serif";
+  --font-ddt-extended: "ddt-extended", "system-ui", "sans-serif";
+}
+
+.section-padding {
+  @apply px-[15px] sm:px-[20px] md:px-[30px] lg:px-[40px] xl:px-[45px] 2xl:px-[50px];
+}
+
+.gradient-text {
+  @apply bg-gradient-to-r from-[#FFBE25] to-[#F0811A] bg-clip-text text-transparent;
+}
+
+* {
+  scrollbar-width: thin;
+}
