@@ -36,3 +36,8 @@
 * {
   scrollbar-width: thin;
 }
+
+::selection {
+  color: black;
+  background: #ffbe25;
+}

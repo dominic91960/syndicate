@@ -1,5 +1,7 @@
-import Hero from "../components/homepage/Hero";
 import brickBg from "../assets/images/homepage/brick-bg.png";
+
+import Hero from "../components/homepage/Hero";
+import Mint from "../components/homepage/Mint";
 
 const HomePage = () => {
   return (
@@ -10,6 +12,7 @@ const HomePage = () => {
         style={{ backgroundImage: `url(${brickBg})` }}
       >
         <Hero />
+        <Mint />
         <div className="h-[40vh]"></div>
       </main>
     </>
