@@ -4,6 +4,7 @@ import Hero from "../components/homepage/Hero";
 import Mint from "../components/homepage/Mint";
 import Workshop from "../components/homepage/Workshop";
 import Collection from "../components/homepage/Collection";
+import Roadmap from "../components/homepage/Roadmap";
 
 const HomePage = () => {
   return (
@@ -17,6 +18,7 @@ const HomePage = () => {
         <Mint />
         <Workshop />
         <Collection />
+        <Roadmap />
         <div className="h-[40vh]"></div>
       </main>
     </>

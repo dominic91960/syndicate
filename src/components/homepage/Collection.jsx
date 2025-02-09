@@ -34,13 +34,13 @@ const SwiperCustomNav = () => {
     <>
       <button
         onClick={() => swiper.slidePrev()}
-        className="absolute bottom-0 left-[35%] z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100"
+        className="absolute bottom-0 left-[35%] z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100 xl:left-[30%] 2xl:left-[35%]"
       >
         <BiSolidLeftArrow />
       </button>
       <button
         onClick={() => swiper.slideNext()}
-        className="absolute right-[35%] bottom-0 z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100"
+        className="absolute right-[35%] bottom-0 z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100 xl:right-[30%] 2xl:right-[35%]"
       >
         <BiSolidRightArrow />
       </button>

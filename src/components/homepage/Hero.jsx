@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="mx-auto my-[1.5em] h-[0.3em] w-[80%] rounded-[1em] bg-gradient-to-r from-[#FFBE25] to-[#F0811A] xl:my-[2em] xl:h-[0.4em]"></div>
 
         {/* Paragraph one */}
-        <p className="font-ddt relative z-[1] mb-[1em] text-justify lg:text-center">
+        <p className="font-ddt relative z-[2] mb-[1em] text-justify lg:text-center">
           Dive deep into the decentralized realm of web3, where the lines
           between technology, entertainment, and innovation blur. Here at the
           Robotic Rabbit Syndicate, we&apos;re pioneering a new age of digital
@@ -38,7 +38,7 @@ const Hero = () => {
         </p>
 
         {/* Paragraph two */}
-        <p className="font-ddt relative z-[1] mb-[1em] text-justify lg:text-center">
+        <p className="font-ddt relative z-[2] mb-[1em] text-justify lg:text-center">
           As the blockchain beats with the heart of every adventure our rabbits
           embark on, be part of a movement that transcends traditional
           entertainment. Join us, as we craft high-quality, relatable IP in the
