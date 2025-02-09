@@ -5,6 +5,7 @@ import Mint from "../components/homepage/Mint";
 import Workshop from "../components/homepage/Workshop";
 import Collection from "../components/homepage/Collection";
 import Roadmap from "../components/homepage/Roadmap";
+import Team from "../components/homepage/Team";
 
 const HomePage = () => {
   return (
@@ -19,7 +20,8 @@ const HomePage = () => {
         <Workshop />
         <Collection />
         <Roadmap />
-        <div className="h-[40vh]"></div>
+        <Team />
+        <div className="h-[40vh] bg-amber-500/20"></div>
       </main>
     </>
   );
