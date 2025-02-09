@@ -49,7 +49,7 @@ const Hero = () => {
         {/* Video with leaklight */}
         <div className="relative z-[1] mx-auto mt-[1.5em] aspect-[16/9] w-[90%] rounded-[1em] shadow-[0_0_15px_8px_#00000080] sm:w-[70%]">
           {/* Leaklight */}
-          <div className="absolute inset-0 m-auto aspect-square h-[120%] rounded-full bg-[#FFBE258F] blur-[10em]"></div>
+          <div className="absolute inset-0 m-auto aspect-square h-[120%] rounded-full bg-[#FFBE258F] blur-[100px]"></div>
 
           {/* Title  */}
           <div className="relative flex items-center justify-between rounded-t-[1em] bg-[#0E0E0E] px-[3em] py-[0.6em] xl:px-[4em]">

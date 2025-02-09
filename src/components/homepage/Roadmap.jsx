@@ -30,9 +30,12 @@ const data = [
 const Roadmap = () => {
   return (
     <section className="bg-black/70 pb-[5em]">
-      <div className="section-padding container mx-auto">
+      <div className="section-padding relative container mx-auto">
+        {/* Leaklight */}
+        <div className="absolute top-0 right-0 aspect-square w-3/4 -translate-y-1/2 translate-x-1/2 rounded-full bg-[#F0811A38] blur-[100px] sm:w-3/5 lg:w-1/2"></div>
+
         {/* Title */}
-        <h1 className="font-ddt-extended gradient-text mx-auto w-fit py-[1.5em] text-center text-[26px] leading-none sm:text-[30px] md:text-[34px] lg:text-[38px] xl:text-[42px] 2xl:text-[46px]">
+        <h1 className="font-ddt-extended gradient-text relative mx-auto w-fit py-[1.5em] text-center text-[26px] leading-none sm:text-[30px] md:text-[34px] lg:text-[38px] xl:text-[42px] 2xl:text-[46px]">
           Roadmap
         </h1>
 

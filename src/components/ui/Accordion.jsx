@@ -37,7 +37,7 @@ const AccordionTrigger = ({ children, className, ...props }) => {
       {...props}
     >
       {children}
-      <IoIosArrowDown className="shrink-0 bg-black transition-transform ease-in group-data-[state=open]:rotate-180" />
+      <IoIosArrowDown className="shrink-0 transition-transform ease-in group-data-[state=open]:rotate-180" />
     </Accordion.Trigger>
   );
 };

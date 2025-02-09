@@ -7,7 +7,7 @@ const Mint = () => {
     <section className="relative h-fit bg-black/70 pt-[2.5em] pb-[5em] text-[16px] sm:text-[17px] md:text-[18px] lg:text-[19px] xl:text-[19.5px] 2xl:text-[20px]">
       <div className="section-padding container mx-auto flex flex-col items-center">
         {/* Leaklight */}
-        <div className="absolute top-0 right-0 left-0 mx-auto aspect-square w-[50%] -translate-y-[60%] rounded-full bg-[#ffbe251d] blur-[10em]"></div>
+        <div className="absolute top-0 right-0 left-0 mx-auto aspect-square w-[50%] -translate-y-[60%] rounded-full bg-[#ffbe251d] blur-[100px]"></div>
 
         {/* Connect wallet btn */}
         <GradientButton

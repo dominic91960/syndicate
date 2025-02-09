@@ -4,13 +4,22 @@ import shockMp4 from "../../assets/images/homepage/workshop/shock.mp4";
 
 const Workshop = () => {
   return (
-    <section
-      className="bg-cover py-[5em]"
-      style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7)), url(${bg})`,
-      }}
-    >
-      <div className="section-padding container mx-auto">
+    <section className="relative bg-cover py-[5em]">
+      {/* Background image */}
+      <picture className="absolute inset-0">
+        <img
+          src={bg}
+          alt="Workshop background"
+          className="size-full object-cover"
+        />
+      </picture>
+      {/* Background tint */}
+      <div className="absolute inset-0 size-full bg-black/70"></div>
+
+      <div className="section-padding relative container mx-auto">
+        {/* Leaklight */}
+        <div className="absolute top-0 right-0 aspect-square w-3/4 -translate-y-1/2 translate-x-1/2 rounded-full bg-[#F0811A38] blur-[100px] sm:w-3/5 lg:w-1/2"></div>
+
         {/* Video  */}
         <div className="relative z-[1] mx-auto mt-[1.5em] aspect-[16/9] w-[90%] rounded-[1em] shadow-[0_0_15px_8px_#00000080] sm:w-[80%]">
           {/* Title  */}
