@@ -74,7 +74,7 @@ const Roadmap = () => {
                 key={id}
                 className={`relative flex w-[260px] sm:w-2/3 sm:gap-[1em] lg:w-[180px] lg:gap-0 xl:w-[210px] xl:max-w-[210px] 2xl:w-[240px] 2xl:max-w-[240px] ${even ? "flex-col-reverse sm:flex-row lg:-translate-y-[10%] lg:flex-col" : "flex-col-reverse sm:flex-row-reverse lg:translate-y-[10%] lg:flex-col-reverse"}`}
               >
-                {/* Path for mobile devices (<640px) */}
+                {/* Path and dot for mobile devices (<640px) */}
                 {i !== 0 && (
                   <>
                     <div className="absolute right-0 bottom-full left-0 mx-auto h-[25%] w-0.5 -translate-y-1/3 bg-[#FFBE25] sm:hidden"></div>
@@ -82,7 +82,7 @@ const Roadmap = () => {
                   </>
                 )}
 
-                {/* Path for tablet devices (640px to 1023px) */}
+                {/* Path and dot for tablet devices (640px to 1023px) */}
                 {!even && (
                   <>
                     <div className="absolute bottom-full left-1/4 hidden h-[40%] w-0.5 -translate-x-1/2 -translate-y-1/2 bg-[#FFBE25] sm:block lg:hidden"></div>
@@ -98,6 +98,7 @@ const Roadmap = () => {
                   </>
                 )}
 
+                {/* Dots for larger screens (lg and above)  */}
                 {!even && (
                   <div className="absolute top-0 right-0 left-0 mx-auto hidden aspect-square w-[10%] -translate-y-full rounded-full bg-[#FFBE25] outline-1 outline-offset-8 outline-[#FFBE25] lg:block"></div>
                 )}
@@ -105,11 +106,14 @@ const Roadmap = () => {
                   <div className="absolute top-full right-0 left-0 mx-auto hidden aspect-square w-[10%] translate-y-[40%] rounded-full bg-[#FFBE25] outline-1 outline-offset-8 outline-[#FFBE25] lg:block"></div>
                 )}
 
+                {/* Image */}
                 <img
                   src={image}
                   alt="Placeholder"
                   className="relative z-[1] aspect-square w-full object-cover object-center sm:w-1/2 lg:w-full"
                 />
+
+                {/* Text */}
                 <div className="sm:w-1/2 lg:w-auto">
                   <h6 className="font-ddt mt-[0.9em] text-center sm:mt-0 lg:mt-[0.9em]">
                     {title.toUpperCase()}

@@ -6,6 +6,8 @@ import Workshop from "../components/homepage/Workshop";
 import Collection from "../components/homepage/Collection";
 import Roadmap from "../components/homepage/Roadmap";
 import Team from "../components/homepage/Team";
+import FAQ from "../components/homepage/FAQ";
+import Footer from "../components/homepage/Footer";
 
 const HomePage = () => {
   return (
@@ -21,7 +23,8 @@ const HomePage = () => {
         <Collection />
         <Roadmap />
         <Team />
-        <div className="h-[40vh] bg-amber-500/20"></div>
+        <FAQ />
+        <Footer />
       </main>
     </>
   );

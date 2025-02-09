@@ -30,6 +30,7 @@ const data = [
 const Team = () => {
   return (
     <section className="relative h-fit overflow-hidden bg-black/70">
+      {/* Bg image with black tint */}
       <picture className="absolute bottom-0 h-[90%] w-full sm:h-[85%] lg:h-4/5 2xl:h-[77.5%]">
         <img src={teamBg} alt="NFT" className="size-full object-cover" />
         <div className="absolute inset-0 bg-black/70"></div>
@@ -41,9 +42,13 @@ const Team = () => {
           Team
         </h1>
 
+        {/* Cards */}
         <div className="relative grid grid-cols-1 gap-[1em] py-[5em] lg:grid-cols-2">
           {data.map(({ id, name, role, desc }) => (
-            <article key={id} className="bg-black px-[2.5em] py-[2em]">
+            <article
+              key={id}
+              className="rounded-[0.3em] bg-black px-[2.5em] py-[2em]"
+            >
               <h3 className="font-ddt-extended mb-[0.2em] text-[1.5em] leading-none">
                 {name}
               </h3>
