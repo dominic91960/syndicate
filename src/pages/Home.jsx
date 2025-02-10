@@ -3,7 +3,7 @@ import brickBg from "../assets/images/homepage/brick-bg.png";
 import Hero from "../components/homepage/Hero";
 import Mint from "../components/homepage/Mint";
 import Workshop from "../components/homepage/Workshop";
-import Collection from "../components/homepage/Collection";
+import Collections from "../components/homepage/Collections";
 import Roadmap from "../components/homepage/Roadmap";
 import Team from "../components/homepage/Team";
 import FAQ from "../components/homepage/FAQ";
@@ -20,7 +20,7 @@ const HomePage = () => {
         <Hero />
         <Mint />
         <Workshop />
-        <Collection />
+        <Collections />
         <Roadmap />
         <Team />
         <FAQ />

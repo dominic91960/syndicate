@@ -6,6 +6,7 @@ import {
   AccordionContent,
 } from "../ui/Accordion";
 
+import batRabbitThumbnail from "../../assets/images/homepage/faq/bat-rabbit-thumbnail.png";
 import batRabbitMp4 from "../../assets/images/homepage/faq/bat-rabbit.mp4";
 import logo from "../../assets/images/logo.png";
 import uncleRabbit from "../../assets/images/homepage/faq/uncle-rabbit.png";
@@ -65,6 +66,7 @@ const FAQ = () => {
               loop
               muted
               playsInline
+              poster={batRabbitThumbnail}
               src={batRabbitMp4}
               className="w-fit rounded-[0.3em] object-cover"
             ></video>

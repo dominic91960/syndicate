@@ -1,5 +1,6 @@
 import heroBg from "../../assets/images/homepage/hero/hero-bg.png";
-import logo from "../../assets/images/logo.png";
+import logoSmall from "../../assets/images/homepage/logo-small.png";
+import loginThumbnail from "../../assets/images/homepage/hero/login-thumbnail.png";
 import loginMp4 from "../../assets/images/homepage/hero/login.mp4";
 
 const Hero = () => {
@@ -9,7 +10,7 @@ const Hero = () => {
       <picture className="absolute inset-0 h-[80%]">
         <img
           src={heroBg}
-          alt="A samurai of the Robotic Rabbit Syndicate"
+          alt="Hero background"
           className="h-full w-full object-cover"
         />
       </picture>
@@ -55,7 +56,7 @@ const Hero = () => {
           <div className="relative flex items-center justify-between rounded-t-[1em] bg-[#0E0E0E] px-[3em] py-[0.6em] xl:px-[4em]">
             <h4 className="gradient-text font-ddt text-[1.25em]">Minting</h4>
             <img
-              src={logo}
+              src={logoSmall}
               alt="The official logo of Robotic Rabbit Syndicate"
               className="w-[3em] object-contain"
             />
@@ -69,6 +70,7 @@ const Hero = () => {
             loop
             muted
             playsInline
+            poster={loginThumbnail}
             src={loginMp4}
             className="relative h-full w-full rounded-b-[1em] object-cover"
           ></video>

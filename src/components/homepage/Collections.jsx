@@ -48,7 +48,7 @@ const SwiperCustomNav = () => {
   );
 };
 
-const Collection = () => {
+const Collections = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
@@ -156,4 +156,4 @@ const Collection = () => {
   );
 };
 
-export default Collection;
+export default Collections;

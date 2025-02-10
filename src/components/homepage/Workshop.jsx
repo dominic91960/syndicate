@@ -1,5 +1,6 @@
-import logo from "../../assets/images/logo.png";
+import logoSmall from "../../assets/images/homepage/logo-small.png";
 import bg from "../../assets/images/homepage/workshop/workshop-bg.png";
+import shockThumbnail from "../../assets/images/homepage/workshop/shock-thumbnail.png";
 import shockMp4 from "../../assets/images/homepage/workshop/shock.mp4";
 
 const Workshop = () => {
@@ -26,7 +27,7 @@ const Workshop = () => {
           <div className="relative flex items-center justify-between rounded-t-[1em] bg-[#0E0E0E] px-[3em] py-[0.6em] xl:px-[4em]">
             <h4 className="gradient-text font-ddt text-[1.25em]">Workshop</h4>
             <img
-              src={logo}
+              src={logoSmall}
               alt="The official logo of Robotic Rabbit Syndicate"
               className="w-[3em] object-contain"
             />
@@ -40,6 +41,7 @@ const Workshop = () => {
             loop
             muted
             playsInline
+            poster={shockThumbnail}
             src={shockMp4}
             className="relative h-full w-full rounded-b-[1em] object-cover"
           ></video>
