@@ -28,6 +28,10 @@
   /* Animations */
   --animate-accordion-open: accordionOpen 300ms cubic-bezier(0.87, 0, 0.13, 1);
   --animate-accordion-close: accordionClose 300ms cubic-bezier(0.87, 0, 0.13, 1);
+  --animate-sidebar-open: sidebarOpen 300ms cubic-bezier(0.87, 0, 0.13, 1)
+    forwards;
+  --animate-sidebar-close: sidebarClose 300ms cubic-bezier(0.87, 0, 0.13, 1)
+    forwards;
 
   @keyframes accordionOpen {
     from {
@@ -46,6 +50,24 @@
       height: 0;
     }
   }
+
+  @keyframes sidebarOpen {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes sidebarClose {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 .section-padding {
@@ -60,7 +82,12 @@
   scrollbar-width: thin;
 }
 
-::selection {
+.homepage *::selection {
   color: black;
   background: #ffbe25;
+}
+
+.dashboard *::selection {
+  color: black;
+  background: #3fff90;
 }

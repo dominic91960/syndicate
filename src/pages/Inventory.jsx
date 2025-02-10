@@ -1,5 +1,5 @@
 const InventoryPage = () => {
-  return <div>InventoryPage</div>;
+  return <div className="h-full w-full">InventoryPage</div>;
 };
 
 export default InventoryPage;

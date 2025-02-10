@@ -1,3 +1,9 @@
+import { FaList } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { IoIosLink } from "react-icons/io";
+import { FaDiscord } from "react-icons/fa";
+import { BiSolidJoystick } from "react-icons/bi";
+
 // NFT carousel images
 import nftOneWebp from "../assets/images/homepage/collection/nft-one.webp";
 import nftOnePng from "../assets/images/homepage/collection/nft-one.png";
@@ -178,4 +184,13 @@ export const faq = [
     answer:
       "Stay connected with our community updates via Discord. We value transparency and communication.",
   },
+];
+
+// Dashboard sidebar links
+export const links = [
+  { path: "", Icon: FaList, label: "Inventory" },
+  { path: "account", Icon: FaUser, label: "Account" },
+  { path: "wallet", Icon: IoIosLink, label: "Linked Wallet" },
+  { path: "roles", Icon: FaDiscord, label: "Discord Roles" },
+  { path: "mint", Icon: BiSolidJoystick, label: "Play to Mint" },
 ];
