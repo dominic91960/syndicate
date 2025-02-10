@@ -1,4 +1,5 @@
-import teamBg from "../../assets/images/homepage/team/team-bg.png";
+import teamBgWebp from "../../assets/images/homepage/team/team-bg.webp";
+import teamBgPng from "../../assets/images/homepage/team/team-bg.png";
 
 const data = [
   {
@@ -29,10 +30,15 @@ const data = [
 
 const Team = () => {
   return (
-    <section className="relative h-fit bg-black/70">
+    <section className="relative h-fit">
       {/* Bg image with black tint */}
-      <picture className="absolute bottom-0 h-[90%] w-full sm:h-[85%] lg:h-4/5 2xl:h-[77.5%]">
-        <img src={teamBg} alt="NFT" className="size-full object-cover" />
+      <picture>
+        <source srcSet={teamBgWebp} />
+        <img
+          src={teamBgPng}
+          alt="NFT"
+          className="absolute bottom-0 h-[90%] w-full object-cover sm:h-[85%] lg:h-4/5 2xl:h-[77.5%]"
+        />
         <div className="absolute inset-0 bg-black/70"></div>
       </picture>
 

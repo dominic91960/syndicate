@@ -1,27 +1,32 @@
-import dummyImg from "../../assets/images/homepage/roadmap/dummy-img.png";
+import dummyImgWebp from "../../assets/images/homepage/roadmap/dummy-img.webp";
+import dummyImgPng from "../../assets/images/homepage/roadmap/dummy-img.png";
 
 const data = [
   {
     id: "rm001",
-    image: dummyImg,
+    webpImage: dummyImgWebp,
+    pngImage: dummyImgPng,
     title: "Robotic rabbit",
     desc: "Robotic rabbit description, robotic rabbit description",
   },
   {
     id: "rm002",
-    image: dummyImg,
+    webpImage: dummyImgWebp,
+    pngImage: dummyImgPng,
     title: "Robotic rabbit",
     desc: "Robotic rabbit description, robotic rabbit description",
   },
   {
     id: "rm003",
-    image: dummyImg,
+    webpImage: dummyImgWebp,
+    pngImage: dummyImgPng,
     title: "Robotic rabbit",
     desc: "Robotic rabbit description, robotic rabbit description",
   },
   {
     id: "rm004",
-    image: dummyImg,
+    webpImage: dummyImgWebp,
+    pngImage: dummyImgPng,
     title: "Robotic rabbit",
     desc: "Robotic rabbit description, robotic rabbit description",
   },
@@ -69,7 +74,7 @@ const Roadmap = () => {
           ></div>
 
           {/* Cards */}
-          {data.map(({ id, image, title, desc }, i) => {
+          {data.map(({ id, webpImage, pngImage, title, desc }, i) => {
             const even = i % 2 === 0;
 
             return (
@@ -110,11 +115,14 @@ const Roadmap = () => {
                 )}
 
                 {/* Image */}
-                <img
-                  src={image}
-                  alt="Placeholder"
-                  className="relative z-[1] aspect-square w-full object-cover object-center sm:w-1/2 lg:w-full"
-                />
+                <picture>
+                  <source srcSet={webpImage} />
+                  <img
+                    src={pngImage}
+                    alt="Placeholder"
+                    className="relative z-[1] aspect-square w-full object-cover object-center sm:w-1/2 lg:w-full"
+                  />
+                </picture>
 
                 {/* Text */}
                 <div className="sm:w-1/2 lg:w-auto">

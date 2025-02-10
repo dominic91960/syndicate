@@ -1,17 +1,21 @@
-import heroBg from "../../assets/images/homepage/hero/hero-bg.png";
-import logoSmall from "../../assets/images/homepage/logo-small.png";
+import heroBgWebp from "../../assets/images/homepage/hero/hero-bg.webp";
+import heroBgPng from "../../assets/images/homepage/hero/hero-bg.png";
+import logoSmallWebp from "../../assets/images/homepage/logo-small.webp";
+import logoSmallPng from "../../assets/images/homepage/logo-small.png";
 import loginThumbnail from "../../assets/images/homepage/hero/login-thumbnail.png";
 import loginMp4 from "../../assets/images/homepage/hero/login.mp4";
+import loginWebm from "../../assets/images/homepage/hero/login.webm";
 
 const Hero = () => {
   return (
     <section className="relative h-fit bg-cover">
       {/* Hero bg */}
-      <picture className="absolute inset-0 h-[80%]">
+      <picture>
+        <source srcSet={heroBgWebp} />
         <img
-          src={heroBg}
+          src={heroBgPng}
           alt="Hero background"
-          className="h-full w-full object-cover"
+          className="absolute inset-0 h-[80%] w-full object-cover"
         />
       </picture>
       {/* Black tint */}
@@ -55,11 +59,14 @@ const Hero = () => {
           {/* Title  */}
           <div className="relative flex items-center justify-between rounded-t-[1em] bg-[#0E0E0E] px-[3em] py-[0.6em] xl:px-[4em]">
             <h4 className="gradient-text font-ddt text-[1.25em]">Minting</h4>
-            <img
-              src={logoSmall}
-              alt="The official logo of Robotic Rabbit Syndicate"
-              className="w-[3em] object-contain"
-            />
+            <picture>
+              <source srcSet={logoSmallWebp} />
+              <img
+                src={logoSmallPng}
+                alt="The official logo of Robotic Rabbit Syndicate"
+                className="w-[3em] object-contain"
+              />
+            </picture>
           </div>
 
           {/* Video */}
@@ -71,9 +78,11 @@ const Hero = () => {
             muted
             playsInline
             poster={loginThumbnail}
-            src={loginMp4}
+            src={loginWebm}
             className="relative h-full w-full rounded-b-[1em] object-cover"
-          ></video>
+          >
+            <source src={loginMp4} type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>

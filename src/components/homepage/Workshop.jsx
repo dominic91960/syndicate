@@ -1,17 +1,20 @@
 import logoSmall from "../../assets/images/homepage/logo-small.png";
-import bg from "../../assets/images/homepage/workshop/workshop-bg.png";
+import bgWebp from "../../assets/images/homepage/workshop/workshop-bg.webp";
+import bgPng from "../../assets/images/homepage/workshop/workshop-bg.png";
 import shockThumbnail from "../../assets/images/homepage/workshop/shock-thumbnail.png";
 import shockMp4 from "../../assets/images/homepage/workshop/shock.mp4";
+import shockWebm from "../../assets/images/homepage/workshop/shock.webm";
 
 const Workshop = () => {
   return (
     <section className="relative bg-cover py-[5em]">
       {/* Background image */}
-      <picture className="absolute inset-0">
+      <picture>
+        <source srcSet={bgWebp} />
         <img
-          src={bg}
+          src={bgPng}
           alt="Workshop background"
-          className="size-full object-cover"
+          className="absolute inset-0 size-full object-cover"
         />
       </picture>
       {/* Background tint */}
@@ -42,9 +45,11 @@ const Workshop = () => {
             muted
             playsInline
             poster={shockThumbnail}
-            src={shockMp4}
+            src={shockWebm}
             className="relative h-full w-full rounded-b-[1em] object-cover"
-          ></video>
+          >
+            <source src={shockMp4} />
+          </video>
         </div>
       </div>
     </section>

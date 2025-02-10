@@ -6,25 +6,88 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import cardHeader from "../../assets/images/homepage/collection/card-header.png";
-import nftOne from "../../assets/images/homepage/collection/nft-one.png";
-import nftTwo from "../../assets/images/homepage/collection/nft-two.png";
-import nftThree from "../../assets/images/homepage/collection/nft-three.png";
+import nftOneWebp from "../../assets/images/homepage/collection/nft-one.webp";
+import nftOnePng from "../../assets/images/homepage/collection/nft-one.png";
+import nftTwoWebp from "../../assets/images/homepage/collection/nft-two.webp";
+import nftTwoPng from "../../assets/images/homepage/collection/nft-two.png";
+import nftThreeWebp from "../../assets/images/homepage/collection/nft-three.webp";
+import nftThreePng from "../../assets/images/homepage/collection/nft-three.png";
 import OutlineButton from "../ui/buttons/OutlineButton";
 import "../../assets/css/collection.css";
 
 const data = [
-  { id: "nft-001", name: "Robotic rabbit", image: nftOne },
-  { id: "nft-002", name: "Robotic rabbit", image: nftTwo },
-  { id: "nft-003", name: "Robotic rabbit", image: nftThree },
-  { id: "nft-004", name: "Robotic rabbit", image: nftOne },
-  { id: "nft-005", name: "Robotic rabbit", image: nftTwo },
-  { id: "nft-006", name: "Robotic rabbit", image: nftThree },
-  { id: "nft-007", name: "Robotic rabbit", image: nftOne },
-  { id: "nft-008", name: "Robotic rabbit", image: nftTwo },
-  { id: "nft-009", name: "Robotic rabbit", image: nftThree },
-  { id: "nft-010", name: "Robotic rabbit", image: nftOne },
-  { id: "nft-011", name: "Robotic rabbit", image: nftTwo },
-  { id: "nft-012", name: "Robotic rabbit", image: nftThree },
+  {
+    id: "nft-001",
+    name: "Robotic rabbit",
+    webpImage: nftOneWebp,
+    pngImage: nftOnePng,
+  },
+  {
+    id: "nft-002",
+    name: "Robotic rabbit",
+    webpImage: nftTwoWebp,
+    pngImage: nftTwoPng,
+  },
+  {
+    id: "nft-003",
+    name: "Robotic rabbit",
+    webpImage: nftThreeWebp,
+    pngImage: nftThreePng,
+  },
+  {
+    id: "nft-004",
+    name: "Robotic rabbit",
+    webpImage: nftOneWebp,
+    pngImage: nftOnePng,
+  },
+  {
+    id: "nft-005",
+    name: "Robotic rabbit",
+    webpImage: nftTwoWebp,
+    pngImage: nftTwoPng,
+  },
+  {
+    id: "nft-006",
+    name: "Robotic rabbit",
+    webpImage: nftThreeWebp,
+    pngImage: nftThreePng,
+  },
+  {
+    id: "nft-007",
+    name: "Robotic rabbit",
+    webpImage: nftOneWebp,
+    pngImage: nftOnePng,
+  },
+  {
+    id: "nft-008",
+    name: "Robotic rabbit",
+    webpImage: nftTwoWebp,
+    pngImage: nftTwoPng,
+  },
+  {
+    id: "nft-009",
+    name: "Robotic rabbit",
+    webpImage: nftThreeWebp,
+    pngImage: nftThreePng,
+  },
+  {
+    id: "nft-010",
+    name: "Robotic rabbit",
+    webpImage: nftOneWebp,
+    pngImage: nftOnePng,
+  },
+  {
+    id: "nft-011",
+    name: "Robotic rabbit",
+    webpImage: nftTwoWebp,
+    pngImage: nftTwoPng,
+  },
+  {
+    id: "nft-012",
+    name: "Robotic rabbit",
+    webpImage: nftThreeWebp,
+    pngImage: nftThreePng,
+  },
 ];
 
 const SwiperCustomNav = () => {
@@ -106,7 +169,7 @@ const Collections = () => {
           }}
         >
           {/* Carousel items */}
-          {data.map(({ id, name, image }) => (
+          {data.map(({ id, name, webpImage, pngImage }) => (
             <SwiperSlide key={id}>
               <div className="relative flex items-center justify-center pb-[80px]">
                 <article className="w-[280px] max-w-[280px]">
@@ -130,15 +193,18 @@ const Collections = () => {
                         "polygon(0 0, 100% 0, 100% 60%, 96% 63%, 96% 72%, 100% 75%, 100% 100%, 0 100%, 0 25%, 4% 22%, 4% 15%, 0 12%)",
                     }}
                   >
-                    <img
-                      src={image}
-                      alt="NFT One"
-                      className="h-full w-full object-cover"
-                      style={{
-                        clipPath:
-                          "polygon(0 0, 100% 0, 100% 60%, 96% 63%, 96% 72.5%, 100% 75.5%, 100% 100%, 0 100%, 0 25%, 4% 22%, 4% 14.5%, 0 11.5%)",
-                      }}
-                    />
+                    <picture>
+                      <source srcSet={webpImage} />
+                      <img
+                        src={pngImage}
+                        alt="NFT One"
+                        className="h-full w-full object-cover"
+                        style={{
+                          clipPath:
+                            "polygon(0 0, 100% 0, 100% 60%, 96% 63%, 96% 72.5%, 100% 75.5%, 100% 100%, 0 100%, 0 25%, 4% 22%, 4% 14.5%, 0 11.5%)",
+                        }}
+                      />
+                    </picture>
                   </div>
 
                   {/* Button */}

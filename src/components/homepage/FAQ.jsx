@@ -8,8 +8,11 @@ import {
 
 import batRabbitThumbnail from "../../assets/images/homepage/faq/bat-rabbit-thumbnail.png";
 import batRabbitMp4 from "../../assets/images/homepage/faq/bat-rabbit.mp4";
-import logo from "../../assets/images/logo.png";
-import uncleRabbit from "../../assets/images/homepage/faq/uncle-rabbit.png";
+import batRabbitWebm from "../../assets/images/homepage/faq/bat-rabbit.webm";
+import logoWebp from "../../assets/images/logo.webp";
+import logoPng from "../../assets/images/logo.png";
+import uncleRabbitWebp from "../../assets/images/homepage/faq/uncle-rabbit.webp";
+import uncleRabbitPng from "../../assets/images/homepage/faq/uncle-rabbit.png";
 
 const data = [
   {
@@ -67,15 +70,18 @@ const FAQ = () => {
               muted
               playsInline
               poster={batRabbitThumbnail}
-              src={batRabbitMp4}
+              src={batRabbitWebm}
               className="w-fit rounded-[0.3em] object-cover"
-            ></video>
+            >
+              <source src={batRabbitMp4} type="video/mp4" />
+            </video>
 
-            <picture className="w-4/5">
+            <picture>
+              <source srcSet={logoWebp} />
               <img
-                src={logo}
+                src={logoPng}
                 alt="The official logo of Robotic Rabbit Syndicate"
-                className="w-full object-contain"
+                className="w-4/5 object-contain"
               />
             </picture>
           </div>
@@ -96,8 +102,9 @@ const FAQ = () => {
               ))}
             </AccordionRoot>
             <picture>
+              <source srcSet={uncleRabbitWebp} />
               <img
-                src={uncleRabbit}
+                src={uncleRabbitPng}
                 alt="The Robotic Rabbit version of Uncle Sam"
               />
             </picture>
