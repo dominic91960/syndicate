@@ -1,36 +1,4 @@
-import dummyImgWebp from "../../assets/images/homepage/roadmap/dummy-img.webp";
-import dummyImgPng from "../../assets/images/homepage/roadmap/dummy-img.png";
-
-const data = [
-  {
-    id: "rm001",
-    webpImage: dummyImgWebp,
-    pngImage: dummyImgPng,
-    title: "Robotic rabbit",
-    desc: "Robotic rabbit description, robotic rabbit description",
-  },
-  {
-    id: "rm002",
-    webpImage: dummyImgWebp,
-    pngImage: dummyImgPng,
-    title: "Robotic rabbit",
-    desc: "Robotic rabbit description, robotic rabbit description",
-  },
-  {
-    id: "rm003",
-    webpImage: dummyImgWebp,
-    pngImage: dummyImgPng,
-    title: "Robotic rabbit",
-    desc: "Robotic rabbit description, robotic rabbit description",
-  },
-  {
-    id: "rm004",
-    webpImage: dummyImgWebp,
-    pngImage: dummyImgPng,
-    title: "Robotic rabbit",
-    desc: "Robotic rabbit description, robotic rabbit description",
-  },
-];
+import { roadmap } from "../../lib/constants";
 
 const Roadmap = () => {
   return (
@@ -74,7 +42,7 @@ const Roadmap = () => {
           ></div>
 
           {/* Cards */}
-          {data.map(({ id, webpImage, pngImage, title, desc }, i) => {
+          {roadmap.map(({ id, webpImage, pngImage, title, desc }, i) => {
             const even = i % 2 === 0;
 
             return (

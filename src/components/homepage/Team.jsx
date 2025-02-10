@@ -1,32 +1,6 @@
 import teamBgWebp from "../../assets/images/homepage/team/team-bg.webp";
 import teamBgPng from "../../assets/images/homepage/team/team-bg.png";
-
-const data = [
-  {
-    id: "member001",
-    name: "Lucian - The Palette Magician",
-    role: "Lead Artist/Illustrator",
-    desc: "Where words fail, Lucian’s art speaks. Each artwork is a universe in itself, echoing the emotions, tales, and dreams of the Robotic Rabbit Syndicate.",
-  },
-  {
-    id: "member002",
-    name: "Luck - The Digital Dynamo",
-    role: "Web3 & Website Engineer Guru",
-    desc: "In the world of 1s and 0s, Luck crafts masterpieces. Merging the realms of web3 and classic web design, he ensures our digital presence is not just functional but also transcendent.",
-  },
-  {
-    id: "member003",
-    name: "Mehdi - The Visionary Heartbeat",
-    role: "Founder, CEO, Creative Director, Sole Investor, & Head Designer",
-    desc: "As the foundation stone of our Syndicate, Mehdi infuses life into our mission. Every pixel dances with his vision, every design narrates his story. Dive into the world he envisions, and witness the magic first-hand",
-  },
-  {
-    id: "member004",
-    name: "Can - The Anime Alchemist",
-    role: "Anime Animator",
-    desc: "To Can, anime is more than a medium - it’s an essence. Merging reality with fantasy, his animations embody the spirit of our Syndicate with every frame.",
-  },
-];
+import { team } from "../../lib/constants";
 
 const Team = () => {
   return (
@@ -53,7 +27,7 @@ const Team = () => {
 
         {/* Cards */}
         <div className="relative grid grid-cols-1 gap-[1em] py-[5em] lg:grid-cols-2">
-          {data.map(({ id, name, role, desc }) => (
+          {team.map(({ id, name, role, desc }) => (
             <article
               key={id}
               className="rounded-[0.3em] bg-black px-[2.5em] py-[2em]"

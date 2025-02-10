@@ -6,6 +6,7 @@ import {
   AccordionContent,
 } from "../ui/Accordion";
 
+import { faq } from "../../lib/constants";
 import batRabbitThumbnail from "../../assets/images/homepage/faq/bat-rabbit-thumbnail.png";
 import batRabbitMp4 from "../../assets/images/homepage/faq/bat-rabbit.mp4";
 import batRabbitWebm from "../../assets/images/homepage/faq/bat-rabbit.webm";
@@ -13,39 +14,6 @@ import logoWebp from "../../assets/images/logo.webp";
 import logoPng from "../../assets/images/logo.png";
 import uncleRabbitWebp from "../../assets/images/homepage/faq/uncle-rabbit.webp";
 import uncleRabbitPng from "../../assets/images/homepage/faq/uncle-rabbit.png";
-
-const data = [
-  {
-    id: "faq001",
-    question: "What rewards are available for community members?",
-    answer:
-      "Enjoy engaging storylines, follow up collections, an exclusive villain series, and shared IP Ownership rights.",
-  },
-  {
-    id: "faq002",
-    question: "What does the brand include?",
-    answer:
-      "We offer an anime series, toys, and merchandise, games on unity engine and decentralized IP ownership. Future plans include games on Unreal Engine and potential cinematic ventures.",
-  },
-  {
-    id: "faq003",
-    question: "How is the art quality of the Robotic Rabbits?",
-    answer:
-      "Our 4K resolution art boasts unique colors, primed for captivating merchandise, toys, and animation.",
-  },
-  {
-    id: "faq004",
-    question: "How many characters are in the brand?",
-    answer:
-      "We feature 3,333 Robotic Rabbits and multiple 3,333 capped collections. Only Robotic Rabbit holders can access follow-up collections.",
-  },
-  {
-    id: "faq005",
-    question: "How do I keep updated on the brand's progress?",
-    answer:
-      "Stay connected with our community updates via Discord. We value transparency and communication.",
-  },
-];
 
 const FAQ = () => {
   return (
@@ -91,8 +59,8 @@ const FAQ = () => {
 
           {/* Division with accordion and FAQ image */}
           <div className="relative col-span-6 lg:col-span-7 2xl:col-span-6">
-            <AccordionRoot type="single" defaultValue={data[0].id} collapsible>
-              {data.map(({ id, question, answer }) => (
+            <AccordionRoot type="single" defaultValue={faq[0].id} collapsible>
+              {faq.map(({ id, question, answer }) => (
                 <AccordionItem key={id} value={id}>
                   <AccordionHeader>
                     <AccordionTrigger>{question}</AccordionTrigger>

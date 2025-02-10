@@ -6,89 +6,9 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import cardHeader from "../../assets/images/homepage/collection/card-header.png";
-import nftOneWebp from "../../assets/images/homepage/collection/nft-one.webp";
-import nftOnePng from "../../assets/images/homepage/collection/nft-one.png";
-import nftTwoWebp from "../../assets/images/homepage/collection/nft-two.webp";
-import nftTwoPng from "../../assets/images/homepage/collection/nft-two.png";
-import nftThreeWebp from "../../assets/images/homepage/collection/nft-three.webp";
-import nftThreePng from "../../assets/images/homepage/collection/nft-three.png";
 import OutlineButton from "../ui/buttons/OutlineButton";
+import { collections } from "../../lib/constants";
 import "../../assets/css/collection.css";
-
-const data = [
-  {
-    id: "nft-001",
-    name: "Robotic rabbit",
-    webpImage: nftOneWebp,
-    pngImage: nftOnePng,
-  },
-  {
-    id: "nft-002",
-    name: "Robotic rabbit",
-    webpImage: nftTwoWebp,
-    pngImage: nftTwoPng,
-  },
-  {
-    id: "nft-003",
-    name: "Robotic rabbit",
-    webpImage: nftThreeWebp,
-    pngImage: nftThreePng,
-  },
-  {
-    id: "nft-004",
-    name: "Robotic rabbit",
-    webpImage: nftOneWebp,
-    pngImage: nftOnePng,
-  },
-  {
-    id: "nft-005",
-    name: "Robotic rabbit",
-    webpImage: nftTwoWebp,
-    pngImage: nftTwoPng,
-  },
-  {
-    id: "nft-006",
-    name: "Robotic rabbit",
-    webpImage: nftThreeWebp,
-    pngImage: nftThreePng,
-  },
-  {
-    id: "nft-007",
-    name: "Robotic rabbit",
-    webpImage: nftOneWebp,
-    pngImage: nftOnePng,
-  },
-  {
-    id: "nft-008",
-    name: "Robotic rabbit",
-    webpImage: nftTwoWebp,
-    pngImage: nftTwoPng,
-  },
-  {
-    id: "nft-009",
-    name: "Robotic rabbit",
-    webpImage: nftThreeWebp,
-    pngImage: nftThreePng,
-  },
-  {
-    id: "nft-010",
-    name: "Robotic rabbit",
-    webpImage: nftOneWebp,
-    pngImage: nftOnePng,
-  },
-  {
-    id: "nft-011",
-    name: "Robotic rabbit",
-    webpImage: nftTwoWebp,
-    pngImage: nftTwoPng,
-  },
-  {
-    id: "nft-012",
-    name: "Robotic rabbit",
-    webpImage: nftThreeWebp,
-    pngImage: nftThreePng,
-  },
-];
 
 const SwiperCustomNav = () => {
   const swiper = useSwiper();
@@ -169,7 +89,7 @@ const Collections = () => {
           }}
         >
           {/* Carousel items */}
-          {data.map(({ id, name, webpImage, pngImage }) => (
+          {collections.map(({ id, name, webpImage, pngImage }) => (
             <SwiperSlide key={id}>
               <div className="relative flex items-center justify-center pb-[80px]">
                 <article className="w-[280px] max-w-[280px]">
