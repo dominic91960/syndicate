@@ -127,7 +127,12 @@
 }
 
 .gradient-text {
-  @apply bg-gradient-to-br from-[#FFBE25] to-[#F0811A] bg-clip-text text-transparent;
+  will-change: transform;
+  color: transparent;
+  background-image: linear-gradient(to bottom right, #ffbe25, #f0811a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 * {
