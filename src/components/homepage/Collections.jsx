@@ -19,13 +19,13 @@ const SwiperCustomNav = () => {
     <>
       <button
         onClick={() => swiper.slidePrev()}
-        className="absolute bottom-0 left-[35%] z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100 xl:left-[30%] 2xl:left-[35%]"
+        className="absolute bottom-0 left-[35%] z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100 xl:left-[27%] 2xl:left-[32%]"
       >
         <BiSolidLeftArrow />
       </button>
       <button
         onClick={() => swiper.slideNext()}
-        className="absolute right-[35%] bottom-0 z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100 xl:right-[30%] 2xl:right-[35%]"
+        className="absolute right-[35%] bottom-0 z-10 -translate-y-[38%] cursor-pointer text-[30px] opacity-80 hover:opacity-100 focus:opacity-100 xl:right-[27%] 2xl:right-[32%]"
       >
         <BiSolidRightArrow />
       </button>
@@ -56,7 +56,7 @@ const Collections = () => {
           loop={true}
           grabCursor={true}
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             disableOnInteraction: true,
             pauseOnMouseEnter: true,
           }}
@@ -65,21 +65,15 @@ const Collections = () => {
           className="mySwiper"
           breakpoints={{
             640: {
-              speed: 3000,
               slidesPerView: 2,
-              slidesPerGroup: 2,
               spaceBetween: 20,
             },
             1024: {
-              speed: 4000,
               slidesPerView: 3,
-              slidesPerGroup: 2,
               spaceBetween: 40,
             },
             1536: {
-              speed: 5000,
               slidesPerView: 4,
-              slidesPerGroup: 2,
               spaceBetween: 50,
             },
           }}

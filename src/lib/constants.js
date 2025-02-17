@@ -66,30 +66,6 @@ export const collections = [
     webpImage: nftTwoWebp,
     pngImage: nftTwoPng,
   },
-  {
-    id: "nft-009",
-    name: "Robotic rabbit",
-    webpImage: nftThreeWebp,
-    pngImage: nftThreePng,
-  },
-  {
-    id: "nft-010",
-    name: "Robotic rabbit",
-    webpImage: nftOneWebp,
-    pngImage: nftOnePng,
-  },
-  {
-    id: "nft-011",
-    name: "Robotic rabbit",
-    webpImage: nftTwoWebp,
-    pngImage: nftTwoPng,
-  },
-  {
-    id: "nft-012",
-    name: "Robotic rabbit",
-    webpImage: nftThreeWebp,
-    pngImage: nftThreePng,
-  },
 ];
 
 // Roadmap data
