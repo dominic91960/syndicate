@@ -5,6 +5,8 @@ import { BiSolidRightArrow } from "react-icons/bi";
 import "swiper/css";
 import "swiper/css/pagination";
 
+import SectionTitle from "./SectionTitle";
+
 import cardHeader from "../../assets/images/homepage/collection/card-header.png";
 import OutlineButton from "../ui/buttons/OutlineButton";
 import { collections } from "../../lib/constants";
@@ -46,9 +48,7 @@ const Collections = () => {
         <div className="absolute top-0 left-0 aspect-square w-3/4 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#F0811A38] blur-[100px] sm:w-3/5 lg:w-1/2"></div>
 
         {/* Title */}
-        <h1 className="font-ddt-extended gradient-text relative mx-auto w-fit py-[1.5em] text-center text-[26px] leading-none sm:text-[30px] md:text-[34px] lg:text-[38px] xl:text-[42px] 2xl:text-[46px]">
-          Collections
-        </h1>
+        <SectionTitle title="Collections" />
 
         {/* Carousel */}
         <Swiper

@@ -6,6 +6,8 @@ import {
   AccordionContent,
 } from "../ui/Accordion";
 
+import SectionTitle from "./SectionTitle";
+
 import { faq } from "../../lib/constants";
 import batRabbitThumbnail from "../../assets/images/homepage/faq/bat-rabbit-thumbnail.png";
 import batRabbitMp4 from "../../assets/images/homepage/faq/bat-rabbit.mp4";
@@ -20,9 +22,7 @@ const FAQ = () => {
     <section className="bg-black/70 pb-[5em]">
       <div className="section-padding container mx-auto">
         {/* Title */}
-        <h1 className="font-ddt-extended gradient-text mx-auto w-fit py-[1.5em] text-center text-[26px] leading-none sm:text-[30px] md:text-[34px] lg:text-[38px] xl:text-[42px] 2xl:text-[46px]">
-          FAQ
-        </h1>
+        <SectionTitle title="FAQ" />
 
         <div className="relative grid grid-cols-1 gap-[1em] sm:grid-cols-12">
           {/* Leaklight */}
