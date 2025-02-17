@@ -127,7 +127,7 @@
 }
 
 .gradient-text {
-  @apply bg-gradient-to-r from-[#FFBE25] to-[#F0811A] bg-clip-text text-transparent;
+  @apply bg-gradient-to-br from-[#FFBE25] to-[#F0811A] bg-clip-text text-transparent;
 }
 
 * {

@@ -7,7 +7,7 @@ const TitleSpan = ({ text, className }) => {
   return (
     <>
       {letters.map((letter, i) => (
-        <span key={letter + i} className={className}>
+        <span key={letter + i} className={`${className} gradient-text`}>
           {letter}
         </span>
       ))}
