@@ -5,7 +5,7 @@ import DashboardLayout from "./layouts/Dashboard";
 
 // Pages
 import HomePage from "./pages/Home";
-import SignInPage from "./pages/Signin";
+import SignInPage from "./pages/SignIn";
 import SignUpPage from "./pages/SignUp";
 import InventoryPage from "./pages/Inventory";
 import AccountPage from "./pages/Account";
