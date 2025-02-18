@@ -1,16 +1,38 @@
+import { useRef } from "react";
+
 import { cn } from "../../../lib/utils";
 
-const OutlineButton = ({ className, children, ...props }) => {
+import audio from "../../../assets/images/homepage/sci-fi-button-click.mp3";
+
+const OutlineButton = ({ className, children, onClick, ...props }) => {
+  const audioRef = useRef();
+
+  const playAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play();
+    }
+  };
+
+  const handleClick = () => {
+    playAudio();
+    onClick();
+  };
+
   return (
-    <button
-      className={cn(
-        "font-montserrat inline-flex cursor-pointer items-center justify-center gap-[0.4em] rounded-[0.25em] border-[0.1em] border-[#FFBE25]/80 bg-transparent px-[5em] py-[0.5em] font-semibold text-white transition-all duration-200 enabled:hover:shadow-[0_0_5px_#F0811A] enabled:hover:brightness-110 enabled:focus:shadow-[0_0_5px_#F0811A] enabled:focus:brightness-110 disabled:opacity-50",
-        className,
-      )}
-      {...props}
-    >
-      {children}
-    </button>
+    <>
+      <audio ref={audioRef} src={audio}></audio>
+      <button
+        className={cn(
+          "font-montserrat inline-flex cursor-pointer items-center justify-center gap-[0.4em] rounded-[0.25em] border-[0.1em] border-[#FFBE25]/80 bg-transparent px-[5em] py-[0.5em] font-semibold text-white transition-all duration-200 enabled:hover:shadow-[0_0_5px_#F0811A] enabled:hover:brightness-110 enabled:focus:shadow-[0_0_5px_#F0811A] enabled:focus:brightness-110 disabled:opacity-50",
+          className,
+        )}
+        onClick={handleClick}
+        {...props}
+      >
+        {children}
+      </button>
+    </>
   );
 };
 
