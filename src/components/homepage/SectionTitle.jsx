@@ -59,7 +59,7 @@ const SectionTitle = ({ title }) => {
   return (
     <h1
       ref={containerRef}
-      className="font-ddt-extended relative mx-auto flex w-fit items-center justify-center py-[1.5em] text-center text-[26px] leading-none text-transparent min-[430px]:py-[1.2em] min-[430px]:text-[32px] sm:text-[40px] md:text-[48px] lg:text-[54px] xl:text-[58px] 2xl:text-[60px]"
+      className="font-ddt-extended relative mx-auto flex w-fit items-center justify-center py-[1.5em] text-center text-[26px] leading-none font-semibold text-transparent min-[430px]:py-[1.2em] min-[430px]:text-[32px] sm:text-[40px] md:text-[48px] lg:text-[54px] xl:text-[58px] 2xl:text-[60px]"
     >
       <TitleSpan text={title} className={title.toLowerCase()} />
     </h1>

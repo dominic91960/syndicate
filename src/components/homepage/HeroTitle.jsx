@@ -42,7 +42,7 @@ const HeroTitle = () => {
   return (
     <h1
       ref={containerRef}
-      className="font-ddt-extended mx-auto flex w-[15ch] flex-wrap items-center justify-center pt-[1.2em] text-center text-[26px] leading-none text-transparent uppercase min-[430px]:text-[32px] sm:pt-[1.25em] sm:text-[40px] md:pt-[1.3em] md:text-[48px] lg:pt-[1.4em] lg:text-[54px] xl:pt-[1.45em] xl:text-[58px] 2xl:pt-[1.5em] 2xl:text-[60px]"
+      className="font-ddt-extended mx-auto flex w-[15ch] flex-wrap items-center justify-center pt-[1.2em] text-center text-[26px] leading-none font-semibold text-transparent uppercase min-[430px]:text-[32px] sm:pt-[1.25em] sm:text-[40px] md:pt-[1.3em] md:text-[48px] lg:pt-[1.4em] lg:text-[54px] xl:pt-[1.45em] xl:text-[58px] 2xl:pt-[1.5em] 2xl:text-[60px]"
     >
       <TitleSpan text="Robotic" className="hero-title-text" />
       &nbsp;

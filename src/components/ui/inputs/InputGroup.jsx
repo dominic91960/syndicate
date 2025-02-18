@@ -3,7 +3,7 @@ import { cn } from "../../../lib/utils";
 const InputGroup = ({ column = false, id, label, className, ...props }) => {
   return (
     <div
-      className={`grid ${column ? "grid-cols-1 gap-[0.5em]" : "grid-cols-10 gap-[1em]"} items-end`}
+      className={`grid ${column ? "grid-cols-1 gap-[0.2em]" : "grid-cols-10 gap-[1em]"} items-end`}
     >
       <label
         htmlFor={id}
