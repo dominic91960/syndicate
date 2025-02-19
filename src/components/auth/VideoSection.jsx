@@ -5,7 +5,7 @@ import batRabbitWebm from "../../assets/images/homepage/faq/bat-rabbit.webm";
 const VideoSection = ({ title, desc }) => {
   return (
     <section
-      className="flex h-full items-center justify-center bg-gradient-to-br from-[#ffbe25] to-[#f0811a] p-px"
+      className="hidden h-full bg-gradient-to-br from-[#ffbe25] to-[#f0811a] p-px lg:flex lg:items-center lg:justify-center"
       style={{
         clipPath:
           "polygon(0 0, 30.2% 0, 32.2% 0.95%, 67.8% 0.95%, 69.8% 0, 100% 0, 100% 10.2%, 90.1% 15.1%, 90.1% 17.25%, 100% 12.25%, 100% 15.2%, 90.1% 20.1%, 90.1% 22.25%, 100% 17.25%, 100% 20.2%, 90.2% 25.1%, 90.1% 27.25%, 100% 22.25%, 100% 98.05%, 50.1% 98.05%, 47.1% 100%, 0 100%, 0 89.8%, 2% 88.8%, 2% 21.2%, 0 20.2%)",
