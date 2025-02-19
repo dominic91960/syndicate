@@ -71,10 +71,7 @@ const FAQ = () => {
             </AccordionRoot>
             <picture>
               <source srcSet={uncleRabbitWebp} />
-              <img
-                src={uncleRabbitPng}
-                alt="The Robotic Rabbit version of Uncle Sam"
-              />
+              <img src={uncleRabbitPng} alt="FAQ" />
             </picture>
           </div>
         </div>
