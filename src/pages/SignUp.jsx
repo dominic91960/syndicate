@@ -1,13 +1,13 @@
 import { Link } from "react-router";
 
 import VideoSection from "../components/auth/VideoSection";
+import FormSection from "../components/auth/FormSection";
 import InputGroup from "../components/ui/inputs/InputGroup";
 import PasswordInput from "../components/ui/inputs/PasswordInput";
 import GradientButton from "../components/ui/buttons/GradientButton";
 
 import brickBgWebp from "../assets/images/homepage/brick-bg.webp";
 import brickBgPng from "../assets/images/homepage/brick-bg.png";
-import FormSection from "../components/auth/FormSection";
 
 const SignUpPage = () => {
   return (
@@ -34,8 +34,7 @@ const SignUpPage = () => {
           {/* Video area */}
           <VideoSection
             title="Join the syndicate"
-            desc="The future is now. Secure your place in the Syndicate and unlock
-                access to exclusive NFT perks, events, and rewards."
+            desc="The future is now. Secure your place in the Syndicate and unlock access to exclusive NFT perks, events, and rewards."
           />
 
           {/* Sign up form */}
